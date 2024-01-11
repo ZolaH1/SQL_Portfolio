@@ -1,4 +1,4 @@
-/* INSERT */
+/* INSERT */ 
 INSERT INTO people
 VALUES ('ZoleezyBaby',1994,04,10,'USA','NC','Winston-Salem',NULL,NULL,NULL,NULL,NULL,NULL,'Zola','Howard','Zola Mack',174,70,'Left','Right',2017-05-08,NULL,'22','1111') 
 INSERT INTO people (playerID, birthyear, birthmonth, birthday, birthcountry,birthstate,birthcity,namefirst,namelast,namegiven,weight,height,bats,throws)
