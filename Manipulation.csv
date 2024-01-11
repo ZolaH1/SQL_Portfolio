@@ -1,1 +1,34 @@
+/* INSERT */
+INSERT INTO people
+VALUES ('ZoleezyBaby',1994,04,10,'USA','NC','Winston-Salem',NULL,NULL,NULL,NULL,NULL,NULL,'Zola','Howard','Zola Mack',174,70,'Left','Right',2017-05-08,NULL,'22','1111') 
+INSERT INTO people (playerID, birthyear, birthmonth, birthday, birthcountry,birthstate,birthcity,namefirst,namelast,namegiven,weight,height,bats,throws)
+VALUES ('BWhite',1993,05,24,'USA','NC','New Bern','Bradley','White','Bradley Tavon',280,69,'Right','Right'),
+('AudioTrooper',1997,01,29,'USA','NC','High Point','Oxen','Mack','Oxen Pope',154,64,'Left','Right')
 
+/* SELECT */
+SELECT * FROM managers
+LIMIT 5;
+
+/* ALTER TABLE */
+ALTER TABLE teams
+ADD COLUMN mascot TEXT;
+ALTER TABLE teams
+DROP COLUMN E;
+ALTER TABLE teams
+RENAME COLUMN SV to Saves;
+
+/* UPDATE */
+UPDATE people
+SET playerid = 'AliLovesPi'
+WHERE namefirst = 'Oxen';
+
+/* DELETE */
+DELETE FROM people
+WHERE namefirst = 'Aber'
+
+/* CREATE TABLE with Constraints */
+CREATE TABLE restaurantsnearstadiums (
+  name TEXT PRIMARY KEY,
+  cuisine TEXT,
+  stadium TEXT NOT NULL,
+  team TEXT)
